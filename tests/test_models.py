@@ -107,7 +107,7 @@ class TestProductModel(unittest.TestCase):
     def test_read_a_product(self):
         """It should read a Product"""
         product = ProductFactory()
-        logger.info(f"Created product: {product}")
+        logging.info(f"Created product: {product}")
         product.id = None
         product.create()
         self.assertIsNotNone(product.id)
@@ -121,7 +121,7 @@ class TestProductModel(unittest.TestCase):
     def test_update_a_product(self):
         """It should update a Product"""
         product = ProductFactory()
-        logger.info(f"Created product: {product}")
+        logging.info(f"Created product: {product}")
         product.id = None
         product.create()
         self.assertIsNotNone(product.id)
